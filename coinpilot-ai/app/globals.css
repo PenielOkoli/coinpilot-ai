@@ -1,0 +1,194 @@
+:root {
+  --ink-950: #0e1524;
+  --ink-900: #141c30;
+  --ink-850: #182238;
+  --ink-border: #2a3550;
+  --paper: #edeef2;
+  --paper-dim: #9ca6bf;
+  --amber: #e8a33d;
+  --amber-dim: #4a3a20;
+  --teal: #4c9a8b;
+  --teal-dim: #1e332f;
+  --rose: #c86b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--ink-950);
+  color: var(--paper);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+.status-line {
+  font-size: 0.9rem;
+  color: var(--paper-dim);
+  border-left: 2px solid var(--amber);
+  padding-left: 0.75rem;
+  margin-bottom: 3rem;
+  max-width: 34ch;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+@media (max-width: 780px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1 {
+  font-family: var(--font-display), serif;
+  font-weight: 500;
+  font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+  line-height: 1.12;
+  margin: 0 0 1.1rem;
+  max-width: 15ch;
+}
+
+.lede {
+  font-size: 1.08rem;
+  color: var(--paper-dim);
+  max-width: 46ch;
+  margin: 0 0 2rem;
+}
+
+.jtbd {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.jtbd li {
+  font-size: 0.95rem;
+  color: var(--paper-dim);
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--ink-border);
+}
+
+.jtbd li strong {
+  color: var(--paper);
+  font-weight: 500;
+}
+
+/* --- demo panel --- */
+
+.panel {
+  background: var(--ink-900);
+  border: 1px solid var(--ink-border);
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+
+.bubble {
+  font-size: 0.92rem;
+  color: var(--paper-dim);
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--ink-border);
+}
+
+.bubble strong {
+  color: var(--paper);
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.ticker {
+  font-family: var(--font-mono), monospace;
+  color: var(--amber);
+}
+
+.proposal {
+  background: var(--ink-850);
+  border: 1px solid var(--amber-dim);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.proposal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.proposal-head span:first-child {
+  font-weight: 500;
+}
+
+.risk-tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  color: var(--amber);
+}
+
+.proposal p {
+  font-size: 0.88rem;
+  color: var(--paper-dim);
+  margin: 0 0 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.actions button {
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--ink-border);
+  background: transparent;
+  color: var(--paper-dim);
+  cursor: default;
+}
+
+.actions .approve {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: var(--teal-dim);
+}
+
+.awaiting {
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--paper-dim);
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ink-border);
+  font-size: 0.85rem;
+  color: var(--paper-dim);
+}
+
+footer a {
+  color: var(--paper);
+}
