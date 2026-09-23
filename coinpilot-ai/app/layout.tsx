@@ -7,6 +7,7 @@ const newsreader = Newsreader({
   variable: "--font-display",
   weight: ["400", "500", "600"],
   style: ["normal", "italic"],
+  adjustFontFallback: false,
 });
 
 const inter = Inter({
