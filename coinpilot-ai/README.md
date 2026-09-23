@@ -32,8 +32,7 @@ Open http://localhost:3000.
 
 This repo is connected to Vercel for automatic deployment on every push to `main`.
 
-- Live URL: _add here once Vercel is connected_
-
+- Live URL: https://coinpilot-ai-tu3e.vercel.app/
 ## Environment variables
 
 See `.env.example`. Never commit real API keys — exchange and market-data credentials belong on the server only (see [Risk Register](docs/risk-register.md), R1).
